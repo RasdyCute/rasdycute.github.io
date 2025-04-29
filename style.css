@@ -1,1 +1,82 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #000;
+  color: #00ff00;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+header#hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1526378722360-5cbf956ae2fd?crop=entropy&cs=tinysrgb&fit=crop&h=1080&w=1920') center/cover no-repeat fixed;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+header#hero h1 {
+  font-size: 4em;
+  margin: 0;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+header#hero p {
+  font-size: 1.5em;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* Accordion */
+.accordion {
+  margin: 30px;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #00ff00;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 15px;
+  background-color: #111;
+  color: #00ff00;
+  font-size: 1.2em;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.accordion-content {
+  background-color: #222;
+  padding: 15px;
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  background-color: #111;
+  border-top: 1px solid #00ff00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
